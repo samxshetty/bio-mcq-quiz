@@ -727,7 +727,7 @@ class BIOQuizApp {
         this.currentQuestions = [];
         this.currentQuestionIndex = 0;
         this.answers = {};
-        this.timeRemaining = 15 * 60; 
+        this.timeRemaining = 30 * 60; 
         this.timer = null;
         this.startTime = null;
         this.studentName = '';
@@ -816,7 +816,7 @@ class BIOQuizApp {
 
     prepareRandomQuestions() {
         const shuffledQuestions = this.shuffleArray(this.questions);
-        const selectedQuestions = shuffledQuestions.slice(0, 20);
+        const selectedQuestions = shuffledQuestions.slice(0, 40);
         
         this.currentQuestions = selectedQuestions.map(q => this.shuffleQuestionOptions(q));
         
@@ -836,7 +836,7 @@ class BIOQuizApp {
         this.prepareRandomQuestions();
         this.currentQuestionIndex = 0;
         this.answers = {};
-        this.timeRemaining = 15 * 60;
+        this.timeRemaining = 30 * 60;
         this.startTime = Date.now();
 
         this.showScreen('quizScreen');
@@ -882,7 +882,7 @@ class BIOQuizApp {
         // Update question counter
         const counterElement = document.getElementById('questionCounter');
         if (counterElement) {
-            counterElement.textContent = `Question ${questionNumber} of 20`;
+            counterElement.textContent = `Question ${questionNumber} of 40`;
         }
 
         // Update question text
@@ -935,7 +935,7 @@ class BIOQuizApp {
 
         const progressBar = document.getElementById('progressBar');
         if (progressBar) {
-            const progress = (questionNumber / 20) * 100;
+            const progress = (questionNumber / 40) * 100;
             progressBar.style.width = `${progress}%`;
         }
 
@@ -946,11 +946,11 @@ class BIOQuizApp {
         if (prevBtn) prevBtn.disabled = questionNumber === 1;
         
         if (nextBtn) {
-            nextBtn.style.display = questionNumber === 20 ? 'none' : 'block';
+            nextBtn.style.display = questionNumber === 40 ? 'none' : 'block';
         }
         
         if (submitBtn) {
-            submitBtn.style.display = questionNumber === 20 ? 'block' : 'none';
+            submitBtn.style.display = questionNumber === 40 ? 'block' : 'none';
         }
     }
 
@@ -992,7 +992,7 @@ class BIOQuizApp {
             }
         });
 
-        const scorePercentage = Math.round((correct / 20) * 100);
+        const scorePercentage = Math.round((correct / 40) * 100);
 
         this.saveResult({
             name: this.studentName,
@@ -1194,7 +1194,7 @@ class BIOQuizApp {
             
             if (elements.completionRate) {
                 const completionRate = results.length > 0 
-                    ? Math.round((results.filter(r => r.correct + r.wrong + r.unanswered === 20).length / results.length) * 100)
+                    ? Math.round((results.filter(r => r.correct + r.wrong + r.unanswered === 40).length / results.length) * 100)
                     : 0;
                 elements.completionRate.textContent = `${completionRate}%`;
             }
@@ -1202,7 +1202,7 @@ class BIOQuizApp {
             if (elements.studentTableBody) {
                 elements.studentTableBody.innerHTML = '';
 
-                results.slice(-20).reverse().forEach(result => {
+                results.slice(-40).reverse().forEach(result => {
                     const row = document.createElement('tr');
                     row.innerHTML = `
                         <td>${result.name}</td>
