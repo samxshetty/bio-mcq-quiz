@@ -555,8 +555,8 @@ class BIOQuizApp {
   },
   {
     id: 93,
-    question: "Antibodies are _______ proteins",
-    options: ["fats", "carbohydrates", "lipids"],
+    question: "Antibodies are _______ ",
+    options: ["proteins","fats", "carbohydrates", "lipids"],
     correct: 0
   },
   {
