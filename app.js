@@ -1,214 +1,724 @@
-class IPPQuizApp {
+class BIOQuizApp {
     constructor() {
         this.questions = [
-{
+  {
     id: 1,
-    question: "Which of the following is the correct extension of the Python file?",
-    options: [".python", ".pl", ".py", ".p"],
-    correct: 2
+    question: "The nose of the redesigned Shinkanzen bullet train is inspired by",
+    options: ["Kingfisher beak", "Crane peak", "Owl Peak", "Herons peak"],
+    correct: 0
   },
   {
     id: 2,
-    question: "What will be the value of the following Python expression 4 + 3 % 5",
-    options: ["7", "2", "4", "1"],
+    question: "Passive cooling in sky scrapers is inspired by",
+    options: ["Termite Mounds", "Earthwork Mounds", "Ant Mounts", "Spiro Mounds"],
     correct: 0
   },
   {
     id: 3,
-    question: "What is the order of precedence in python?",
-    options: ["Exponential, Parentheses, Multiplication, Division, Addition, Subtraction", "Exponential, Parentheses, Division, Multiplication, Addition, Subtraction", "Parentheses, Exponential, Multiplication, Addition, Division, Subtraction", "Parentheses, Exponential, Multiplication, Division, Addition, Subtraction"],
-    correct: 3
+    question: "Belt movement of military tanks was inspired by",
+    options: ["Caterpillar Movement", "Termite Movement", "Ant Movement", "Butterfly Movement"],
+    correct: 0
   },
   {
     id: 4,
-    question: "What are the values of the following Python expressions? 2**(3**2), (2**3)**2, 2**3**2",
-    options: ["512, 64, 512", "512, 512, 512", "64, 512, 64", "64, 64, 64"],
+    question: "Retinal prosthetic developed by scientists is approved by",
+    options: ["USFDA", "USEPA", "CPCB", "SPCB"],
     correct: 0
   },
   {
     id: 5,
-    question: "Which of the following functions is a built-in function in python?",
-    options: ["factorial()", "print()", "seed()", "sqrt()"],
-    correct: 1
+    question: "The gene from ____________ was used to develop genetically modified corn",
+    options: ["Bacillus thuringiensis", "Bacillus cereus", "Bacillus subtilis", "Bacillus Anthrasis"],
+    correct: 0
   },
   {
     id: 6,
-    question: "Which of the following is false about Identifiers",
-    options: ["Identifiers can be combination of uppercase and lowercase letters, digits or an underscore (_).", "An Identifier can start with digit.", "We can't use special symbols like !,#,@,%,$ etc in Identifier.", "Identifier can be of any length."],
-    correct: 1
+    question: "Protein produced by Bacillus thuringiensis which has insecticide property is",
+    options: ["Cry Protein", "Res Protein", "Try Protein", "Taf Protein"],
+    correct: 0
   },
   {
     id: 7,
-    question: "Which of the following is Identity operator",
-    options: ["in", "not in", "not", "is"],
-    correct: 3
+    question: "Biofertilizers have the potential to",
+    options: ["Replace chemical nitrogen and phosphorus", "Reduce crop yield", "Destimulate plant growth", "Reduce soil fertility"],
+    correct: 0
   },
   {
     id: 8,
-    question: "What does 3 ^ 4 evaluate to?",
-    options: ["81", "12", "0.75", "7"],
-    correct: 3
+    question: "In the case of self healing concrete the microstucture analysis can be done by",
+    options: ["SEM", "XRD", "FTIR", "XPS"],
+    correct: 0
   },
   {
     id: 9,
-    question: "Which is the correct operator for power(xy)?",
-    options: ["x^y", "x**y", "x^^y", "x*y"],
-    correct: 1
+    question: "_______is a pollution control technique using a bioreactor containing living material to capture and biologically degrade pollutants.",
+    options: ["Biofiltration", "Bioaugmentation", "Bioleaching", "Biomimetics"],
+    correct: 0
   },
   {
     id: 10,
-    question: "Which of the following operators has its associativity from right to left?",
-    options: ["+", "//", "%", "**"],
-    correct: 3
+    question: "A nanoparticle is a small particle that ranges between ____________",
+    options: ["1 to 100 nm", "1 to 100 mm", "1-1000 nm", "1- 10 µm"],
+    correct: 0
   },
   {
     id: 11,
-    question: "What will be the output of X&Y if x=15 and y=12",
-    options: ["b1101", "0b1101", "12", "1101"],
-    correct: 2
+    question: "The tensile strength of carbon nanotubes is approximately ___________ times greater than that of steel of the same diameter.",
+    options: ["100", "10", "25", "50"],
+    correct: 0
   },
   {
     id: 12,
-    question: "Which of the following represents the bitwise XOR operator?",
-    options: ["&", "^", "|", "!"],
-    correct: 1
+    question: "Who first used the term nanotechnology and when",
+    options: ["Nario Taniguchi, 1974", "Richard Feyman, 1959", "Erix Dexler, 1986", "Alexander Flemming, 1940"],
+    correct: 0
   },
   {
     id: 13,
-    question: "Which of the following is invalid?",
-    options: ["_a = 1", "_ a = 1", "str _ = 1", "str# = 1"],
-    correct: 3
+    question: "The width of carbon nanotube _____________",
+    options: ["0.5-2.5nm", "0.1-0.5nm", "2.5-4.5nm", "4.5-6.5 nm"],
+    correct: 0
   },
   {
     id: 14,
-    question: "What is a variable in Python?",
-    options: ["A reserved word", "A data type", "A location in memory to store data", "A function"],
-    correct: 2
+    question: "If 10 hydrogen atoms are laid side by side the length of this chain would be",
+    options: ["7 nm", "10nm", "2nm", "20nm"],
+    correct: 0
   },
   {
     id: 15,
-    question: "Which of the following is not a valid data type in Python?",
-    options: ["int", "float", "char", "str"],
-    correct: 2
+    question: "Human hair is ________ nm in size",
+    options: ["50000- 100000", "500- 1000", "500000- 1000000", "50-100"],
+    correct: 0
   },
   {
     id: 16,
-    question: "Which symbol is used to start a single-line comment in Python?",
-    options: ["//", "/* */", "`", "#"],
-    correct: 3
+    question: "The prefix nano comes from ______ word nanaos which means dwarf",
+    options: ["Greek", "French", "Spanish", "Latin"],
+    correct: 0
   },
   {
     id: 17,
-    question: "How do you write a multi-line comment in Python?",
-    options: ["Using /* and */", "Using // at the beginning of each line", "Using triple quotes (\"\"\"...\"\"\" or '''...''')", "Using # at the beginning of each line"],
-    correct: 2
+    question: "Why is there a need to switch to organic farming?",
+    options: ["Increasing environmental pollution", "Increasing poverty", "Increasing road accidents", "Increasing population"],
+    correct: 0
   },
   {
     id: 18,
-    question: "How many elif statements can an if-else block contain?",
-    options: ["Only 1", "Only 2", "As many as needed", "None"],
-    correct: 2
+    question: "Early detection of cancer can be achieved by",
+    options: ["AI", "CCD", "BBD", "MRIS"],
+    correct: 0
   },
   {
     id: 19,
-    question: "Which of these is NOT a valid for loop syntax in Python?",
-    options: ["for i in range(5):", "for i in [1, 2, 3]:", "for i = 0; i < 5; i++:", "for i in 'hello':"],
-    correct: 2
+    question: "Prokaryotic cell size ranges from ____________ in diameter",
+    options: ["0.1 to 5.0 μm", "0.1 to 50 μm", "10 to 50 μm", "2 to 10μm"],
+    correct: 0
   },
   {
     id: 20,
-    question: "What does range(5) produce?",
-    options: ["1, 2, 3, 4, 5", "0, 1, 2, 3, 4", "5, 4, 3, 2, 1", "0, 1, 2, 3, 4, 5"],
-    correct: 1
+    question: "_____________do not have a true nucleus and membrane-bound organelles",
+    options: ["Prokaryotic cells", "Eukaryotic cells", "Plant cells", "Animal cells"],
+    correct: 0
   },
   {
     id: 21,
-    question: "What is the syntax for an if statement in Python?",
-    options: ["if condition:", "if condition;", "if (condition)", "if condition then"],
+    question: "Mitochondria, Golgi bodies, chloroplast, and lysosomes are absent in",
+    options: ["Prokaryotic cells", "Eukaryotic cells", "Plant cells", "Animal cells"],
     correct: 0
   },
   {
     id: 22,
-    question: "What does the elif statement do in Python?",
-    options: ["Executes code if the previous if condition is True", "Executes code if the previous if condition is False", "Executes code if the previous if and elif conditions are False", "Creates a new loop"],
-    correct: 1
+    question: "____________ protein is the important constituents of eukaryotic chromosomes",
+    options: ["Histone", "Heme", "Cistone", "Diastone"],
+    correct: 0
   },
   {
     id: 23,
-    question: "What does the range() function do in Python?",
-    options: ["Creates a list of characters", "Creates a list of numbers", "Creates a list of strings", "Creates a list of dictionaries"],
-    correct: 1
+    question: "The asexually mode of division in prokaryotes is by",
+    options: ["Binary fission", "Conjugation", "Ligation", "Mitosis"],
+    correct: 0
   },
   {
     id: 24,
-    question: "What will be the output of the following code? for i in range(5): if i == 3: break print(i)",
-    options: ["0 1 2 3 4", "0 1 2 3", "0 1 2", "0 1 2 3 4 5"],
-    correct: 2
+    question: "The sexual mode of reproduction in prokaryotes is by",
+    options: ["Conjugation", "Binary fission", "Ligation", "Mitosis"],
+    correct: 0
   },
   {
     id: 25,
-    question: "What will this code output? x = 0 if x: print(\"True\") else: print(\"False\")",
-    options: ["True", "False", "Error", "No output"],
-    correct: 1
+    question: "The outer protective covering found in the bacterial cells which helps in attachment is _______________",
+    options: ["Capsule", "Cell wall", "Cell membrane", "Cytoplasm"],
+    correct: 0
   },
   {
     id: 26,
-    question: "What is the purpose of a loop in Python?",
-    options: ["To execute a code block once", "To stop a program", "To execute a code block multiple times", "To check the validity of an expression"],
-    correct: 2
+    question: "__________ are involved in protein synthesis",
+    options: ["Ribosomes", "Lysosomes", "Mitochondria", "Vacuoles"],
+    correct: 0
   },
   {
     id: 27,
-    question: "Which keyword is used to exit a loop in Python?",
-    options: ["exit", "stop", "break", "return"],
-    correct: 2
+    question: "______ are hair-like outgrowths that attach to the surface of other bacterial cells.",
+    options: ["Pili", "Capsule", "Flagella", "Cilia"],
+    correct: 0
   },
   {
     id: 28,
-    question: "What does the 'continue' keyword do in a loop?",
-    options: ["Pauses the loop", "Stops the loop", "Skips the rest of the code inside the loop for the current iteration", "Exits the program"],
-    correct: 2
+    question: "__________ can be used to observe virus",
+    options: ["Electron Microscope", "Light Microscope", "Naked eye", "Fluorescent microscope"],
+    correct: 0
   },
   {
     id: 29,
-    question: "Which loop is typically used when the number of iterations is known?",
-    options: ["For loop", "While loop", "Do-while loop", "Infinite loop"],
+    question: "__________ possess extrachromosomal DNA known as plasmids",
+    options: ["Bacteria", "Fungi", "Yeast", "Plant cell"],
     correct: 0
   },
   {
     id: 30,
-    question: "What will be the output of the following code? for i in range(1, 6): if i == 3: continue print(i)",
-    options: ["1 2", "1 2 3", "1 2 4 5", "1 2 4"],
-    correct: 2
+    question: "Cell wall of bacterial cell is composed of",
+    options: ["Peptidoglycan", "Protein", "Cellulose", "Chitin"],
+    correct: 0
   },
   {
     id: 31,
-    question: "What will be the output of the following Python code?",
-    options: ["1", "1 3 5 7 …", "1 2 3 4 …", "No Output"],
-    correct: 3
+    question: "Chitin is the structural component present in ________ cell wall",
+    options: ["Fungal", "Bacterial", "Cynobacterial", "Virus"],
+    correct: 0
   },
   {
     id: 32,
-    question: "What will be the output of the following Python code?",
-    options: ["Prints \"Hello\" three times and then prints \"Else block.\"", "Prints \"Hello\" four times.", "Prints \"Else block\" three times.", "Raises a SyntaxError"],
+    question: "Gram Positive bacteria have thick layer of ___________",
+    options: ["Peptidoglycan", "Chitin", "Mannose", "Teichoic Acid"],
     correct: 0
   },
   {
     id: 33,
-    question: "What does the pass statement do in Python?",
-    options: ["Exits a loop", "Acts as a placeholder that does nothing", "Skips the rest of the code in a block", "Raises an exception"],
-    correct: 1
+    question: "Gram negative organisms are very _____________ to antibiotics",
+    options: ["Resistant", "Susceptible", "Receptive", "Vulnerable"],
+    correct: 0
   },
   {
     id: 34,
-    question: "What will be the output of the following code snippet?",
-    options: ["0 1 2", "0 2", "0 0 0", "Error"],
+    question: "_________ content is very low in gram positive bacteria",
+    options: ["Lipid", "Carbohydrate", "Protein", "Fat"],
     correct: 0
   },
   {
     id: 35,
-    question: "What will be the output of the following Python code",
-    options: ["Prints even numbers in reverse order from 10 to 1.", "Prints odd numbers in the range [1, 10].", "Prints even numbers in the range [1, 10].", "Raises a SyntaxError."],
+    question: "Cell wall thickness of gram positive organism is",
+    options: ["20- 80 nm", "2- 8 nm", "200- 800 nm", "150- 300nm"],
+    correct: 0
+  },
+  {
+    id: 36,
+    question: "When gram positive bacteria is stained by gram staining technique and visualized under the microscope it looks _____________",
+    options: ["Purple", "Pink", "Red", "Brown"],
+    correct: 0
+  },
+  {
+    id: 37,
+    question: "__________ needs to enter a living thing to perform its only function, which is to replicate",
+    options: ["Virus", "Bacteria", "Fungi", "Yeast"],
+    correct: 0
+  },
+  {
+    id: 38,
+    question: "___________ hijacks a person's cellular machinery to produce clones of itself",
+    options: ["Virus", "Bacteria", "Fungi", "Yeast"],
+    correct: 0
+  },
+  {
+    id: 39,
+    question: "Which of the following is not a typical shape of virus",
+    options: ["Trapezoid", "Polyhedral", "Spherical", "Helical"],
+    correct: 0
+  },
+  {
+    id: 40,
+    question: "________is commonly known as black bread mold",
+    options: ["Rhizopus stolonifer", "Rhizopus mucoraceae", "Aspergillus niger", "Candida albicans"],
+    correct: 0
+  },
+  {
+    id: 41,
+    question: "Which of the following is not a edible mushroom",
+    options: ["Amanita Mushrooms", "Oyster Mushrooms", "Morel Mushrooms", "Portobello Mushrooms"],
+    correct: 0
+  },
+  {
+    id: 42,
+    question: "The Greek word 'Eu' means",
+    options: ["well", "large", "round", "embryo"],
+    correct: 0
+  },
+  {
+    id: 43,
+    question: "Which of the following is a eukaryotic cell?",
+    options: ["protozoan", "virus", "bacteria", "None of these"],
+    correct: 0
+  },
+  {
+    id: 44,
+    question: "Which of the following is not a eukaryotic cell?",
+    options: ["bacteria", "protozoan", "fungi", "animal"],
+    correct: 0
+  },
+  {
+    id: 45,
+    question: "Which of the following is not a characteristic of eukaryotic cell?",
+    options: ["circular DNA", "membrane enclosed nucleus", "membrane bound organelles", "cytoskeleton"],
+    correct: 0
+  },
+  {
+    id: 46,
+    question: "The cell wall is present in",
+    options: ["only plant cells", "only animal cells", "plant and animal cells", "protozoans"],
+    correct: 0
+  },
+  {
+    id: 47,
+    question: "The following is not a function of the cell wall",
+    options: ["helps in water transport", "provides shape to cell", "cell to cell interaction", "protection against injury"],
+    correct: 0
+  },
+  {
+    id: 48,
+    question: "Cell membrane is also called as",
+    options: ["Plasma membrane", "Plasmalemma", "Cell wall", "nuclear membrane"],
+    correct: 0
+  },
+  {
+    id: 49,
+    question: "Cell membrane is made up of",
+    options: ["phospholipid bilayer", "phospholipid trilayer", "glycolipid layer", "phospholipid layer"],
+    correct: 0
+  },
+  {
+    id: 50,
+    question: "___________ positions the organelles in a cell",
+    options: ["Cytoskeleton", "Cytoplasm", "Cell membrane", "Cell wall"],
+    correct: 0
+  },
+  {
+    id: 51,
+    question: "___________ is the center of nucleus",
+    options: ["Nucleolus", "Nucleoplasm", "Nuclear Membrane", "Chromatin"],
+    correct: 0
+  },
+  {
+    id: 52,
+    question: "The function of ribosomes is _____",
+    options: ["protein synthesis", "chromatin synthesis", "endoplasmic reticulum synthesis", "enzyme synthesis"],
+    correct: 0
+  },
+  {
+    id: 53,
+    question: "Ribosome is attached to _____",
+    options: ["Endoplasmic reticulum", "golgi complex", "mitochondria", "lysozome"],
+    correct: 0
+  },
+  {
+    id: 54,
+    question: "The consistency of cytoplasm is _______",
+    options: ["semisolid", "solid", "liquid", "gaseous"],
+    correct: 0
+  },
+  {
+    id: 55,
+    question: "Which of the following is not a function of cytoskeleton?",
+    options: ["Transport of ions", "cell shape", "cell movement", "positions organelles"],
+    correct: 0
+  },
+  {
+    id: 56,
+    question: "In eukaryotic cells DNA is ________",
+    options: ["linear", "circular", "irregular", "flat"],
+    correct: 0
+  },
+  {
+    id: 57,
+    question: "The function of the nucleolus is to produce",
+    options: ["ribosomes", "proteins", "enzymes", "energy"],
+    correct: 0
+  },
+  {
+    id: 58,
+    question: "Ribosome in found attached to __________ and ________",
+    options: ["nucleus, ER", "ER, mitochondria", "nucleus, mitochondria", "nucleolus, mitochondria"],
+    correct: 0
+  },
+  {
+    id: 59,
+    question: "The function of ribosomes is _____",
+    options: ["protein synthesis", "enzyme synthesis", "energy synthesis", "DNA synthesis"],
+    correct: 0
+  },
+  {
+    id: 60,
+    question: "The synthesis of cholesterol is done by _______",
+    options: ["smooth ER", "Rough ER", "Golgi complex", "centromere"],
+    correct: 0
+  },
+  {
+    id: 61,
+    question: "The molecule that functions as energy for cells is ________",
+    options: ["Adenosine Tri Phosphate", "Adenosine Di Phosphate", "Adenosine Mono Phosphate", "Adenosine Phosphate"],
+    correct: 0
+  },
+  {
+    id: 62,
+    question: "The matrix of the mitochondria in animal cells contains DNA and ________",
+    options: ["ribosomes", "vacuoles", "centrioles", "Endoplasmic Reticulum"],
+    correct: 0
+  },
+  {
+    id: 63,
+    question: "The Golgi complex releases ________ for package and transport of proteins",
+    options: ["vesicles", "ribosomes", "vacuoles", "centrioles"],
+    correct: 0
+  },
+  {
+    id: 64,
+    question: "____________ are called as suicide bags of the cells",
+    options: ["lysozomes", "centrioles", "vacuoles", "centromeres"],
+    correct: 0
+  },
+  {
+    id: 65,
+    question: "The cytoskeletal components are synthesized by _________ in the animal cell",
+    options: ["centromere", "ribosomes", "vacuoles", "vesicles"],
+    correct: 0
+  },
+  {
+    id: 66,
+    question: "The membrane around the vacuole is called as",
+    options: ["tonoplast", "chloroplast", "leucoplast", "centroplast"],
+    correct: 0
+  },
+  {
+    id: 67,
+    question: "The shape of plant cells is __________",
+    options: ["rectangular", "circular", "irregular", "flat"],
+    correct: 0
+  },
+  {
+    id: 68,
+    question: "Which of the following is not a biomolecule?",
+    options: ["Calcium sulphate", "Carbohydrates", "Lipids", "Nucliec Acids"],
+    correct: 0
+  },
+  {
+    id: 69,
+    question: "Lipid is comprised on fatty acids and _____",
+    options: ["Glycerol", "Alcohol", "Hydrocarbon", "Butanol"],
+    correct: 0
+  },
+  {
+    id: 70,
+    question: "Palmatic acid is designated as ____",
+    options: ["C16", "C14", "C18", "C20"],
+    correct: 0
+  },
+  {
+    id: 71,
+    question: "Fatty acids with no double bonds are ________",
+    options: ["Saturated", "Unsaturated", "Transaturated", "Cisaturated"],
+    correct: 0
+  },
+  {
+    id: 72,
+    question: "Which of the following is not a type of lipids?",
+    options: ["Saturated lipids", "Simple lipids", "Complex lipids", "Derived lipids"],
+    correct: 0
+  },
+  {
+    id: 73,
+    question: "Which is a type of Derived lipids?",
+    options: ["Steroids", "Phospholipids", "Glycolipids", "Waxes"],
+    correct: 0
+  },
+  {
+    id: 74,
+    question: "Phospholipids contain fatty acids, glycerol and a ___",
+    options: ["phosphate group", "phosphorous atom", "phosphoric acid", "none of these"],
+    correct: 0
+  },
+  {
+    id: 75,
+    question: "Glycolipids contain fatty acids, glycerol and ______",
+    options: ["carbohydrates", "glucose", "sucrose", "fructose"],
+    correct: 0
+  },
+  {
+    id: 76,
+    question: "Terpenes are components of essential oils secreted by ______",
+    options: ["plamt cells", "insects", "animal cells", "fungi"],
+    correct: 0
+  },
+  {
+    id: 77,
+    question: "The component of cell membrane is ________",
+    options: ["phospholipid", "glycolipid", "sphingolipid", "lipoproteins"],
+    correct: 0
+  },
+  {
+    id: 78,
+    question: "_______ is present in the myelin sheath of nerve fibres",
+    options: ["sphingolipid", "phospholipid", "glycolipid", "lipoproteins"],
+    correct: 0
+  },
+  {
+    id: 79,
+    question: "The general formula for carbohydrates is ___",
+    options: ["Cn(H2O)n", "Cn+1(H2O)n", "Cn(H2nO)n", "Cn+1(H2nO)n2"],
+    correct: 0
+  },
+  {
+    id: 80,
+    question: "Which of the following is not a type of complex carbohydrate?",
+    options: ["monosaccharide", "disaccharide", "oligosaccharide", "polysaccharide"],
+    correct: 0
+  },
+  {
+    id: 81,
+    question: "Based on _________, carbohydrates are classified into aldoses and ketoses",
+    options: ["functional group", "no of carbon atoms", "double bonds", "number of saccharides"],
+    correct: 0
+  },
+  {
+    id: 82,
+    question: "Ribose is an example for ______",
+    options: ["pentose", "hexose", "triose", "heptose"],
+    correct: 0
+  },
+  {
+    id: 83,
+    question: "Starch is a _________",
+    options: ["polysaccharide", "oligosaccharide", "monosaccharide", "disaccharide"],
+    correct: 0
+  },
+  {
+    id: 84,
+    question: "_____ sugar present in legumes etc causes flatulence",
+    options: ["raffinose", "starch", "glycogen", "cellulose"],
+    correct: 0
+  },
+  {
+    id: 85,
+    question: "There are ____ amino acids divided into ___ groups",
+    options: ["20, 7", "25, 7", "20, 8", "25, 8"],
+    correct: 0
+  },
+  {
+    id: 86,
+    question: "Amino acids are joined by _______ bonds",
+    options: ["peptide bond", "phosphodiester bond", "hydroxyl bond", "amine bond"],
+    correct: 0
+  },
+  {
+    id: 87,
+    question: "Which of the following is an acidic amino acid?",
+    options: ["glutamine", "glycine", "alanine", "leucine"],
+    correct: 0
+  },
+  {
+    id: 88,
+    question: "Pleated sheet and alpha helix are types of ________ structures of proteins",
+    options: ["secondary", "primary", "tertiary", "quaternary"],
+    correct: 0
+  },
+  {
+    id: 89,
+    question: "In an alpha helix there exists ___ amino acids per turn",
+    options: ["3.6", "4", "3.8", "3"],
+    correct: 0
+  },
+  {
+    id: 90,
+    question: "Beta pleated sheets are joined on their sides by ________ bonds",
+    options: ["hydrogen", "hydroxyl", "amine", "peptide"],
+    correct: 0
+  },
+  {
+    id: 91,
+    question: "__________ strengthens bones and skin",
+    options: ["Collagen", "Raffinose", "actin", "myosin"],
+    correct: 0
+  },
+  {
+    id: 92,
+    question: "Actin and myosin are the proteins involved in",
+    options: ["muscle contraction", "bone strengthening", "blood circulation", "immune development"],
+    correct: 0
+  },
+  {
+    id: 93,
+    question: "Antibodies are _______ proteins",
+    options: ["fats", "carbohydrates", "lipids"],
+    correct: 0
+  },
+  {
+    id: 94,
+    question: "The process of synthesis of proteins from RNA is _______",
+    options: ["translation", "transcription", "replication", "transfusion"],
+    correct: 0
+  },
+  {
+    id: 95,
+    question: "In RNA, the nitrogenous base __________ is replaced by uracil",
+    options: ["thymine", "adenine", "guanine", "cytosine"],
+    correct: 0
+  },
+  {
+    id: 96,
+    question: "________ attached to the phosphate group is called nucleotide in case of nucleic acids",
+    options: ["Nucleoside", "Base", "Sugar", "Phosphodiester bond"],
+    correct: 0
+  },
+  {
+    id: 97,
+    question: "Adenine: Guanine:: Cytosine:________ in DNA",
+    options: ["Thymine", "Uracil", "Purine", "Pyrimidine"],
+    correct: 0
+  },
+  {
+    id: 98,
+    question: "The strands of DNA run _______ to each other",
+    options: ["Anti-parellel", "parellel", "obtuse", "horizontal"],
+    correct: 0
+  },
+  {
+    id: 99,
+    question: "The nitrogenous bases in DNA pair by _________",
+    options: ["hydrogen bonds", "phosphodiester bonds", "peptide bonds", "phosphotriester bonds"],
+    correct: 0
+  },
+  {
+    id: 100,
+    question: "________ carries the genetic information of DNA to be used for protein synthesis",
+    options: ["messenger RNA", "transfer RNA", "ribosomal RNA", "information RNA"],
+    correct: 0
+  },
+  {
+    id: 101,
+    question: "What is not produced during photosynthesis?",
+    options: ["Carbon dioxide", "Oxygen", "Organic compounds", "Glucose"],
+    correct: 0
+  },
+  {
+    id: 102,
+    question: "What is the source of energy for photosynthesis to take place?",
+    options: ["Light", "ATP", "Water", "Oxygen"],
+    correct: 0
+  },
+  {
+    id: 103,
+    question: "Calvin's cycle takes place in the _______",
+    options: ["Stroma", "Thylakoids", "Grana", "Chlorophyll"],
+    correct: 0
+  },
+  {
+    id: 104,
+    question: "Photosynthesis doesn't depend on _______",
+    options: ["Chlorophyll content", "Temperature", "Light intensity", "Carbon dioxide"],
+    correct: 0
+  },
+  {
+    id: 105,
+    question: "ATP is a ________ derivative",
+    options: ["Nucleotide", "Nucleoside", "Protein", "Lipid"],
+    correct: 0
+  },
+  {
+    id: 106,
+    question: "_________ of the ATP contains large amount of energy in the form of high energy electrons",
+    options: ["Phosphate bonds", "Sugar", "Nitrogenous base", "Nucleotide"],
+    correct: 0
+  },
+  {
+    id: 107,
+    question: "The process by which cell breaks down glucose to give ATP is _______",
+    options: ["Respiration", "Photosynthesis", "Mitosis", "Meiosis"],
+    correct: 0
+  },
+  {
+    id: 108,
+    question: "Electron transport occurs in ______ of mitochondria",
+    options: ["Cristae", "Matrix", "Cytoplasm", "Grana"],
+    correct: 0
+  },
+  {
+    id: 109,
+    question: "In aerobic respiration, one glucose molecule releases _____ molecules of ATP",
+    options: ["38", "2", "22", "18"],
+    correct: 0
+  },
+  {
+    id: 110,
+    question: "In anaerobic respiration, one glucose releases _ molecules of ATP",
+    options: ["2", "38", "22", "18"],
+    correct: 0
+  },
+  {
+    id: 111,
+    question: "The function of DNA polymerase is ______",
+    options: ["To join nucleotides to form new DNA strand", "Break hydrogen bonds", "Unwind DNA strand", "Replicate DNA"],
+    correct: 0
+  },
+  {
+    id: 112,
+    question: "Glucose breaks down to form two pyruvate molecules in _",
+    options: ["Glycolysis", "Krebs cycle", "Electron transport chain", "Photosynthesis"],
+    correct: 0
+  },
+  {
+    id: 113,
+    question: "In krebs cycle pyruvate is broken down to give hydrogen and ________",
+    options: ["Carbon dioxide", "Oxygen", "ATP", "Energy"],
+    correct: 0
+  },
+  {
+    id: 114,
+    question: "DNA replication is forming multiple copies of _______",
+    options: ["Chromosomes", "RNA", "Genetic material", "Heredity"],
+    correct: 0
+  },
+  {
+    id: 115,
+    question: "Which of the following is not a step in mitosis?",
+    options: ["Interphase", "Prophase", "Metaphase", "Anaphase"],
+    correct: 0
+  },
+  {
+    id: 116,
+    question: "Cell grows and prepares for mitosis in ________ step",
+    options: ["Interphase", "Prophase", "Metaphase", "Anaphase"],
+    correct: 0
+  },
+  {
+    id: 117,
+    question: "After cell division the divided cells are referred to as _______ cells",
+    options: ["Daughter", "Son", "Offspring", "Product"],
+    correct: 0
+  },
+  {
+    id: 118,
+    question: "Chromatids are joined by ______ in prophase",
+    options: ["Centromeres", "Lysosomes", "Microtubules", "Cytoskeleton"],
+    correct: 0
+  },
+  {
+    id: 119,
+    question: "In cytokinesis ________",
+    options: ["Two daughter cells are formed", "Two chromosomes are formed", "Chromatids divide", "Spindle fibres are formed"],
+    correct: 0
+  },
+  {
+    id: 120,
+    question: "In photosynthesis raw materials are _______",
+    options: ["Carbon dioxide and water", "Oxygen and water", "Hydrogen and water", "Carbon dioxide and Oxygen"],
     correct: 0
   }
 ];
@@ -615,9 +1125,9 @@ class IPPQuizApp {
 
     saveResult(result) {
         try {
-            let results = JSON.parse(localStorage.getItem('IPPQuizResults') || '[]');
+            let results = JSON.parse(localStorage.getItem('BIOQuizResults') || '[]');
             results.push(result);
-            localStorage.setItem('IPPQuizResults', JSON.stringify(results));
+            localStorage.setItem('BIOQuizResults', JSON.stringify(results));
         } catch (error) {
             console.error('Error saving result:', error);
         }
@@ -662,7 +1172,7 @@ class IPPQuizApp {
 
     showAdminDashboard() {
         try {
-            const results = JSON.parse(localStorage.getItem('IPPQuizResults') || '[]');
+            const results = JSON.parse(localStorage.getItem('BIOQuizResults') || '[]');
             
             const elements = {
                 totalStudents: document.getElementById('totalStudents'),
@@ -716,7 +1226,7 @@ class IPPQuizApp {
 
     exportCSV() {
         try {
-            const results = JSON.parse(localStorage.getItem('IPPQuizResults') || '[]');
+            const results = JSON.parse(localStorage.getItem('BIOQuizResults') || '[]');
             
             if (results.length === 0) {
                 alert('No data to export.');
@@ -741,7 +1251,7 @@ class IPPQuizApp {
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `IPP_quiz_results_${new Date().toISOString().split('T')[0]}.csv`;
+            a.download = `BIO_quiz_results_${new Date().toISOString().split('T')[0]}.csv`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -765,5 +1275,5 @@ class IPPQuizApp {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new IPPQuizApp();
+    new BIOQuizApp();
 });
